@@ -11,7 +11,38 @@
 		A3E4F65124C083C40016140C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E4F65024C083C40016140C /* ContentView.swift */; };
 		A3E4F65324C083C50016140C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3E4F65224C083C50016140C /* Assets.xcassets */; };
 		A3E4F65624C083C50016140C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3E4F65524C083C50016140C /* Preview Assets.xcassets */; };
+		A3E4F66424C083F50016140C /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3E4F66324C083F50016140C /* WidgetKit.framework */; };
+		A3E4F66624C083F50016140C /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3E4F66524C083F50016140C /* SwiftUI.framework */; };
+		A3E4F66924C083F50016140C /* SandboxWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E4F66824C083F50016140C /* SandboxWidget.swift */; };
+		A3E4F66C24C083F60016140C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3E4F66B24C083F60016140C /* Assets.xcassets */; };
+		A3E4F66E24C083F60016140C /* SandboxWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = A3E4F66A24C083F50016140C /* SandboxWidget.intentdefinition */; };
+		A3E4F66F24C083F60016140C /* SandboxWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = A3E4F66A24C083F50016140C /* SandboxWidget.intentdefinition */; };
+		A3E4F67224C083F60016140C /* SandboxWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A3E4F66124C083F50016140C /* SandboxWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A3E4F67024C083F60016140C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3E4F64324C083C40016140C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3E4F66024C083F50016140C;
+			remoteInfo = SandboxWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A3E4F67624C083F60016140C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A3E4F67224C083F60016140C /* SandboxWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A3E4F64B24C083C40016140C /* widgetSandbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = widgetSandbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -20,6 +51,13 @@
 		A3E4F65224C083C50016140C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3E4F65524C083C50016140C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A3E4F65724C083C50016140C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3E4F66124C083F50016140C /* SandboxWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SandboxWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3E4F66324C083F50016140C /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		A3E4F66524C083F50016140C /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		A3E4F66824C083F50016140C /* SandboxWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SandboxWidget.swift; sourceTree = "<group>"; };
+		A3E4F66A24C083F50016140C /* SandboxWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = SandboxWidget.intentdefinition; sourceTree = "<group>"; };
+		A3E4F66B24C083F60016140C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A3E4F66D24C083F60016140C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +68,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A3E4F65E24C083F50016140C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3E4F66624C083F50016140C /* SwiftUI.framework in Frameworks */,
+				A3E4F66424C083F50016140C /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -37,6 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				A3E4F64D24C083C40016140C /* widgetSandbox */,
+				A3E4F66724C083F50016140C /* SandboxWidget */,
+				A3E4F66224C083F50016140C /* Frameworks */,
 				A3E4F64C24C083C40016140C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				A3E4F64B24C083C40016140C /* widgetSandbox.app */,
+				A3E4F66124C083F50016140C /* SandboxWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,6 +119,26 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		A3E4F66224C083F50016140C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3E4F66324C083F50016140C /* WidgetKit.framework */,
+				A3E4F66524C083F50016140C /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A3E4F66724C083F50016140C /* SandboxWidget */ = {
+			isa = PBXGroup;
+			children = (
+				A3E4F66824C083F50016140C /* SandboxWidget.swift */,
+				A3E4F66A24C083F50016140C /* SandboxWidget.intentdefinition */,
+				A3E4F66B24C083F60016140C /* Assets.xcassets */,
+				A3E4F66D24C083F60016140C /* Info.plist */,
+			);
+			path = SandboxWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,15 +149,34 @@
 				A3E4F64724C083C40016140C /* Sources */,
 				A3E4F64824C083C40016140C /* Frameworks */,
 				A3E4F64924C083C40016140C /* Resources */,
+				A3E4F67624C083F60016140C /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A3E4F67124C083F60016140C /* PBXTargetDependency */,
 			);
 			name = widgetSandbox;
 			productName = widgetSandbox;
 			productReference = A3E4F64B24C083C40016140C /* widgetSandbox.app */;
 			productType = "com.apple.product-type.application";
+		};
+		A3E4F66024C083F50016140C /* SandboxWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3E4F67324C083F60016140C /* Build configuration list for PBXNativeTarget "SandboxWidgetExtension" */;
+			buildPhases = (
+				A3E4F65D24C083F50016140C /* Sources */,
+				A3E4F65E24C083F50016140C /* Frameworks */,
+				A3E4F65F24C083F50016140C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SandboxWidgetExtension;
+			productName = SandboxWidgetExtension;
+			productReference = A3E4F66124C083F50016140C /* SandboxWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -99,6 +188,9 @@
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
 					A3E4F64A24C083C40016140C = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					A3E4F66024C083F50016140C = {
 						CreatedOnToolsVersion = 12.0;
 					};
 				};
@@ -117,6 +209,7 @@
 			projectRoot = "";
 			targets = (
 				A3E4F64A24C083C40016140C /* widgetSandbox */,
+				A3E4F66024C083F50016140C /* SandboxWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +224,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A3E4F65F24C083F50016140C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3E4F66C24C083F60016140C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -138,12 +239,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3E4F66F24C083F60016140C /* SandboxWidget.intentdefinition in Sources */,
 				A3E4F65124C083C40016140C /* ContentView.swift in Sources */,
 				A3E4F64F24C083C40016140C /* widgetSandboxApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A3E4F65D24C083F50016140C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3E4F66E24C083F60016140C /* SandboxWidget.intentdefinition in Sources */,
+				A3E4F66924C083F50016140C /* SandboxWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A3E4F67124C083F60016140C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A3E4F66024C083F50016140C /* SandboxWidgetExtension */;
+			targetProxy = A3E4F67024C083F60016140C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		A3E4F65824C083C50016140C /* Debug */ = {
@@ -265,6 +384,7 @@
 		A3E4F65B24C083C50016140C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -276,7 +396,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lukeinger.BarkingLotAppClips.widgetSandbox;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackingwithswift.widgetSandbox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -286,6 +406,7 @@
 		A3E4F65C24C083C50016140C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,8 +418,48 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lukeinger.BarkingLotAppClips.widgetSandbox;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackingwithswift.widgetSandbox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A3E4F67424C083F60016140C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SandboxWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackingwithswift.widgetSandbox.SandboxWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A3E4F67524C083F60016140C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SandboxWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackingwithswift.widgetSandbox.SandboxWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -321,6 +482,15 @@
 			buildConfigurations = (
 				A3E4F65B24C083C50016140C /* Debug */,
 				A3E4F65C24C083C50016140C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3E4F67324C083F60016140C /* Build configuration list for PBXNativeTarget "SandboxWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3E4F67424C083F60016140C /* Debug */,
+				A3E4F67524C083F60016140C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
